@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Moje stránka</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Slunce</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Vítej na mé stránce!</h1>
-   
-
-    <button>První tlačítko</button>
-    <button>Druhé tlačítko</button>
-    <button>Třetí tlačítko</button>
+  <header class="sticky">
+    <nav>
+      <div class="logo">Hotel Slunce</div>
+      <ul class="menu">
+        <li><a href="#pokoje">Pokoje</a></li>
+        <li><a href="#cenik">Ceník</a></li>
+        <li><a href="#recenze">Recenze</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#rezervace">Rezervace</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Vítejte v Hotelu Slunce</h1>
+    <p>Luxusní ubytování v srdci přírody</p>
+  </section>
+  <section id="pokoje">
+    <h2>Naše pokoje</h2>
+  </section>
+  <section id="cenik">
+    <h2>Ceník</h2>
+  </section>
+  <section id="sleva">
+    <h2>Speciální sleva</h2>
+    <p>Využijte nabídku za:</p>
+    <div id="countdown"></div>
+  </section>
+  <section id="recenze">
+    <h2>Recenze hostů</h2>
+  </section>
+  <section id="faq">
+    <h2>Často kladené dotazy</h2>
+  </section>
+  <section id="rezervace">
+    <h2>Rezervujte si pokoj</h2>
+    <form action="rezervace.php" method="POST">
+      <input type="text" name="jmeno" placeholder="Vaše jméno" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="date" name="prijezd" required>
+      <input type="date" name="odjezd" required>
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Telefon: +420 123 456 789</p>
+    <p>Email: info@hotelslunce.cz</p>
+    <div class="mapa">
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Hotel Slunce</p>
+  </footer>
 </body>
 </html>
